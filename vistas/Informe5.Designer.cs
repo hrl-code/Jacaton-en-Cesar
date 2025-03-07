@@ -38,9 +38,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(119, 62);
+            this.label1.Location = new System.Drawing.Point(159, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(531, 20);
+            this.label1.Size = new System.Drawing.Size(656, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Relación de las cinco ciudades y número de libros editados en ellas (top 5)";
             // 
@@ -52,20 +53,25 @@
             this.Tabla.AllowUserToResizeRows = false;
             this.Tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tabla.Location = new System.Drawing.Point(75, 104);
+            this.Tabla.Location = new System.Drawing.Point(100, 128);
+            this.Tabla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tabla.Name = "Tabla";
             this.Tabla.ReadOnly = true;
-            this.Tabla.Size = new System.Drawing.Size(646, 317);
+            this.Tabla.RowHeadersWidth = 51;
+            this.Tabla.Size = new System.Drawing.Size(861, 390);
             this.Tabla.TabIndex = 16;
             // 
             // Informe5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Tabla);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Informe5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Informe5";

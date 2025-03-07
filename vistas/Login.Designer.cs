@@ -51,9 +51,10 @@ namespace Jacaton
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.botonRegistro);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(16, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(385, 337);
+            this.panel1.Size = new System.Drawing.Size(513, 415);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -62,26 +63,30 @@ namespace Jacaton
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(135, 158);
+            this.label3.Location = new System.Drawing.Point(180, 194);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 20);
+            this.label3.Size = new System.Drawing.Size(124, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Contraseña";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // campoPass
             // 
-            this.campoPass.Location = new System.Drawing.Point(139, 199);
+            this.campoPass.Location = new System.Drawing.Point(185, 245);
+            this.campoPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoPass.Name = "campoPass";
-            this.campoPass.Size = new System.Drawing.Size(100, 20);
+            this.campoPass.Size = new System.Drawing.Size(132, 22);
             this.campoPass.TabIndex = 5;
+            this.campoPass.UseSystemPasswordChar = true;
             this.campoPass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // campoUser
             // 
-            this.campoUser.Location = new System.Drawing.Point(139, 109);
+            this.campoUser.Location = new System.Drawing.Point(185, 134);
+            this.campoUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoUser.Name = "campoUser";
-            this.campoUser.Size = new System.Drawing.Size(100, 20);
+            this.campoUser.Size = new System.Drawing.Size(132, 22);
             this.campoUser.TabIndex = 4;
             // 
             // label2
@@ -89,9 +94,10 @@ namespace Jacaton
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(149, 70);
+            this.label2.Location = new System.Drawing.Point(199, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.Size = new System.Drawing.Size(86, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Usuario";
             // 
@@ -100,18 +106,20 @@ namespace Jacaton
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(23, 0);
+            this.label1.Location = new System.Drawing.Point(31, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.Size = new System.Drawing.Size(85, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Login";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // botonRegistro
             // 
-            this.botonRegistro.Location = new System.Drawing.Point(153, 257);
+            this.botonRegistro.Location = new System.Drawing.Point(204, 316);
+            this.botonRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.botonRegistro.Name = "botonRegistro";
-            this.botonRegistro.Size = new System.Drawing.Size(80, 30);
+            this.botonRegistro.Size = new System.Drawing.Size(107, 37);
             this.botonRegistro.TabIndex = 1;
             this.botonRegistro.Text = "Registrar";
             this.botonRegistro.UseVisualStyleBackColor = true;
@@ -119,11 +127,13 @@ namespace Jacaton
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(409, 361);
+            this.ClientSize = new System.Drawing.Size(545, 444);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -160,7 +170,7 @@ namespace Jacaton
             }
             else
             {
-                MessageBox.Show("KeTu TEcre", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario o Contraseña Incorrecto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 campoPass.Text = "";
                 campoUser.Text = "";
             }

@@ -21,11 +21,17 @@ namespace Jacaton
 
         private void comboSeccion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int total;
-            int seccion = Convert.ToInt32(comboSeccion.SelectedItem);
-            DataTable tabla = BBDD.Conexion.InformeTres(seccion, out total);
-            Tabla.DataSource = tabla;
-            labelSeccion.Text = total.ToString();
+            if (comboSeccion.SelectedIndex==0)
+            {
+                MessageBox.Show("Seleccione una seccion");
+            }
+            else { 
+                int total;
+                int seccion = Convert.ToInt32(comboSeccion.SelectedItem);
+                DataTable tabla = BBDD.Conexion.InformeTres(seccion, out total);
+                Tabla.DataSource = tabla;
+                labelSeccion.Text = total.ToString();
+            }
         }
     }
     
