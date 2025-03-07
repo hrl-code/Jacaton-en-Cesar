@@ -72,7 +72,9 @@
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1085, 601);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1085, 601);
             this.Name = "Informe4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Informe4";

@@ -72,7 +72,9 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1115, 601);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1115, 601);
             this.Name = "Informe1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Informe1";

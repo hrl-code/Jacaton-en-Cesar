@@ -62,6 +62,7 @@
             // 
             // comboSeccion
             // 
+            this.comboSeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSeccion.FormattingEnabled = true;
             this.comboSeccion.Items.AddRange(new object[] {
             "Seleccione",
@@ -79,7 +80,6 @@
             this.comboSeccion.Name = "comboSeccion";
             this.comboSeccion.Size = new System.Drawing.Size(160, 24);
             this.comboSeccion.TabIndex = 2;
-            this.comboSeccion.Text = "Seleccione";
             this.comboSeccion.SelectedIndexChanged += new System.EventHandler(this.comboSeccion_SelectedIndexChanged);
             // 
             // label3
@@ -135,7 +135,9 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1085, 601);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1085, 601);
             this.Name = "Informe3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Informe3";

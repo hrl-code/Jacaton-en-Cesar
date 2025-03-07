@@ -268,11 +268,11 @@ namespace Jacaton.BBDD
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("UBICACION", typeof(string));
-            dt.Columns.Add("VOLUMENES", typeof(int));
+            dt.Columns.Add("LIBROS", typeof(int));
 
             totalVolumenes = 0; // Inicializamos el contador
 
-            string consulta = "SELECT u.ubicacion AS UBICACION, COUNT(l.idLibro) AS VOLUMENES " +
+            string consulta = "SELECT u.ubicacion AS UBICACION, COUNT(l.idLibro) AS LIBROS " +
                     "FROM ubicacion u " +
                     "JOIN libros l ON u.ubicacion = l.codUbicacion " +
                     "WHERE u.ubicacion LIKE '" + seccion + "%' " +
@@ -290,7 +290,7 @@ namespace Jacaton.BBDD
                     while (reader.Read())
                     {
                         string ubicacion = reader.GetString("UBICACION");
-                        int volumenes = reader.GetInt32("VOLUMENES");
+                        int volumenes = reader.GetInt32("LIBROS");
 
 
                         totalVolumenes += volumenes;

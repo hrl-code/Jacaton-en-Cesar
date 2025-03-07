@@ -43,6 +43,8 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(159, 82);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.MaximumSize = new System.Drawing.Size(660, 25);
+            this.label1.MinimumSize = new System.Drawing.Size(660, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(660, 25);
             this.label1.TabIndex = 0;

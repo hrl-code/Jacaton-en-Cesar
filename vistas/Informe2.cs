@@ -21,7 +21,7 @@ namespace Jacaton.vistas
             Tabla1.DataSource = tabla1;
 
             DataTable tabla2 = Conexion.InformeDos2();
-            Tabla2.DataSource = tabla1;
+            Tabla2.DataSource = tabla2;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
